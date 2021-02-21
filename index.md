@@ -3,20 +3,30 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-This tutorial explores Machine Learning using scikit-learn and TensorFlow for applications in high energy physics.
 
-Extended from a [version developed by Luke Polson for the 2020 USATLAS Computing Bootcamp](https://lukepolson.github.io/HEP_ML_Lessons/).
+{% include gh_variables.html %}
 
-<!-- this is an html comment -->
-
-{% comment %} This is a comment in Liquid {% endcomment %}
-
+This is my lesson home page template.
 
 > ## Prerequisites
-> * A [Kaggle](https://www.kaggle.com/) account. Click [here to create an account](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F)
-> * Basic Python knowledge, e.g. through the [Software Carpentry Programming with Python lesson](https://swcarpentry.github.io/python-novice-inflammation/) 
+> This assumes that 
+> 1. You have a basic understanding of the command line and bash
+> 2. A willingness to learn!
 {: .prereq}
 
-{% include curriculum.html %}
+> ## Ten Things You Need To Know
+>
+> 0.  Don't panic.
+> 1.  Create a new lesson by using GitHub Import, *not* by forking.
+> 2.  Run `bin/lesson_initialize.py` *once* in a new lesson repository to set up standard files.
+> 3.  Run `make lesson-check` to check that the lesson is formatted correctly.
+> 4.  Put lesson episodes in `_episodes` (or `_episodes_rmd` if you are writing in RMarkdown).
+> 5.  Run `make serve` to preview the lesson website locally.
+> 6.  Do *not* commit the generated HTML files in the `_site` directory.
+> 7.  Style blocks and code samples by putting `{: .stylename}` on a newline *after* the block or code.
+> 8.  Put solutions inside challenges using nested blockquotes.
+> 9.  File issues and template fixes in the [styles repository][styles],
+>     and enhancements to this documentation in this one.
+{: .checklist}
 
 {% include links.md %}
