@@ -4,43 +4,29 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
-<iframe width="427" height="251" src="https://www.youtube.com/embed?v=D1qgTYq_imM&list=PLKZ9c4ONm-VmHsMKImIDEMsZI1Vp0UY-Z&ab_channel=HEPSoftwareFoundation" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include gh_variables.html %}
 
-This tutorial explores Machine Learning using scikit-learn and PyTorch for applications in high energy physics.
-
-Extended from a [version developed by Luke Polson for the 2020 USATLAS Computing Bootcamp](https://lukepolson.github.io/HEP_ML_Lessons/).
-
-This lesson leads directly into a lesson ["Machine Learning on GPU"](https://hsf-training.github.io/hsf-training-ml-gpu-webpage/) originally developed by Anna Scaife.
-
-<!-- this is an html comment -->
-
-{% comment %} This is a comment in Liquid {% endcomment %}
-
+This is my lesson home page template.
 
 > ## Prerequisites
-> * A [Kaggle](https://www.kaggle.com/) account. Click [here to create an account](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F) as described in the [Setup page](https://hsf-training.github.io/hsf-training-ml-webpage/setup.html)
-> * Basic Python knowledge, e.g. through the [Software Carpentry Programming with Python lesson](https://swcarpentry.github.io/python-novice-inflammation/) 
+> This assumes that 
+> 1. You have a basic understanding of the command line and bash
+> 2. A willingness to learn!
 {: .prereq}
 
-Introduction
-------------
-
-Machine learning is everywhere in modern "big-data" science. As physicists and big-data scientists, it's a good idea to know a bit about machine learning.
-
-The aim of this lesson is to:
-- explore what it means to build a machine learning model
-- expand on concepts in machine learning that are essential to anyone working in big-data science
-
-> ## The skills we'll focus on:
+> ## Ten Things You Need To Know
 >
-> 1.  Understanding a bit about machine learning
-> 2.  Preparing data for machine learning
-> 3.  Training some machine learning models
-> 4.  Comparing some machine learning models
+> 0.  Don't panic.
+> 1.  Create a new lesson by using GitHub Import, *not* by forking.
+> 2.  Run `bin/lesson_initialize.py` *once* in a new lesson repository to set up standard files.
+> 3.  Run `make lesson-check` to check that the lesson is formatted correctly.
+> 4.  Put lesson episodes in `_episodes` (or `_episodes_rmd` if you are writing in RMarkdown).
+> 5.  Run `make serve` to preview the lesson website locally.
+> 6.  Do *not* commit the generated HTML files in the `_site` directory.
+> 7.  Style blocks and code samples by putting `{: .stylename}` on a newline *after* the block or code.
+> 8.  Put solutions inside challenges using nested blockquotes.
+> 9.  File issues and template fixes in the [styles repository][styles],
+>     and enhancements to this documentation in this one.
 {: .checklist}
-
-{% include curriculum.html %}
-
-Videos are provided at the top of each page to help guide you. For the sections without coding (Introduction, Mathematical Foundations, Neural Networks) the videos essentially take you through the text, so choose whichever way you learn best: video or reading. For the remaining sections, the videos take you through the coding live.
 
 {% include links.md %}
