@@ -6,7 +6,7 @@
 
 This repository generates the corresponding lesson website from [The Carpentries](https://carpentries.org/) repertoire of lessons. 
 
-View the lesson at: <https://mikesoughton.github.io/my-lesson/>
+View the lesson at: <https://mikesoughton.github.io/my-lesson-new/>
 
 ## Contributing
 
